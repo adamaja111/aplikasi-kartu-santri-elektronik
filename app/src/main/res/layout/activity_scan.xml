@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.scan.ScanActivity">
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/tvScanStatus"
+        app:layout_constraintEnd_toEndOf="@id/tvScanStatus"
+        app:layout_constraintTop_toTopOf="@id/tvScanStatus"
+        app:layout_constraintBottom_toBottomOf="@id/tvScanStatus"
+        android:src="@drawable/edit_text_box"
+        android:alpha="0.5"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8"
+        />
+
+    <TextView
+        android:id="@+id/tvScanStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/guideLine"
+        app:layout_constraintBottom_toBottomOf="@id/guideLine"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Arahkan ke barcode Santri"
+        android:textAlignment="center"
+        android:paddingVertical="8dp"
+        android:textSize="16sp"
+        android:paddingHorizontal="16dp"
+        android:textColor="@color/main_green"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideLineTwo"
+        app:layout_constraintBottom_toBottomOf="@id/guideLineTwo"
+        android:layout_marginHorizontal="24dp"
+        android:padding="12dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_menu_btn"
+        >
+        <TextView
+            android:id="@+id/scanResultTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hasil Scan : "
+            tools:text="Hasil Scan : N001"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/cream_green"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:id="@+id/tidakDitemukanTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow_one"
+            android:fontFamily="@font/poppins"
+            android:visibility="invisible"
+            android:text="*Tidak ditemukan santri dengan NIS sesuai hasil scan, coba lagi."
+            android:textSize="10sp"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

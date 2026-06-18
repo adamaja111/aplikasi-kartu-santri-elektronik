@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginHorizontal="2dp"
+    android:layout_marginVertical="4dp"
+    android:padding="8dp"
+    android:gravity="center"
+    android:background="@drawable/grentwobox_container_12"
+    >
+
+    <ImageView
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:src="@drawable/img_pelanggaran"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:id="@+id/tvNamaPelanggaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Melewati jam malam"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/main_green_deep"
+            android:textSize="12sp"
+            android:textAlignment="textStart"
+            android:includeFontPadding="false"
+            android:layout_marginTop="8dp"
+            />
+        <TextView
+            android:id="@+id/tvJenisPelanggaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="* Pelanggaran Sedang"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="@color/red"
+            android:textSize="9sp"
+            android:textAlignment="textStart"
+            android:includeFontPadding="false"
+            />
+        <TextView
+            android:id="@+id/tvPoinPelanggaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Poin: 5"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textAlignment="textStart"
+            android:includeFontPadding="false"
+            />
+        <TextView
+            android:id="@+id/tvTanggalPelanggaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Tanggal pelanggaran : 12/09/2022"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/main_green"
+            android:textSize="9sp"
+            android:textAlignment="textStart"
+            android:includeFontPadding="false"
+            />
+        <TextView
+            android:id="@+id/tvSanksiPelanggaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Sanksi : Penambahan piket pagi"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/main_green"
+            android:textSize="11sp"
+            android:textAlignment="textStart"
+            android:includeFontPadding="false"
+            />
+
+        <TextView
+            android:id="@+id/tvTanggalSanksiPenyakit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Tanggal Sanksi : 15/09/2022"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/main_green"
+            android:textSize="9sp"
+            android:textAlignment="textStart"
+            android:includeFontPadding="false"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnDelete"
+        android:layout_marginStart="8dp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/baseline_delete_24"
+        />
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:layout_margin="4dp"
+    android:orientation="horizontal">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@color/main_green"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.BackgroundItemSantri"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@color/green_two"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.RightBottomRadius"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tvNamaSantri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Nama Santri"
+                android:includeFontPadding="false"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="12sp"
+                android:textColor="@color/cream"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/ivGender"
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:src="@drawable/img_male"
+                    />
+                <TextView
+                    android:id="@+id/tvTTLahir"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    tools:text="Bandung (12/09/2001)"
+                    android:includeFontPadding="false"
+                    android:layout_marginStart="3dp"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="9sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/cream_green"
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvNomorTelpon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="081234567890"
+                android:includeFontPadding="false"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="2dp"
+                android:textSize="9sp"
+                android:textColor="@color/cream_green"
+                />
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="santri@gmail.com"
+                android:includeFontPadding="false"
+                android:fontFamily="@font/poppins"
+                android:textStyle="italic"
+                android:textSize="9sp"
+                android:textColor="@color/cream_green_deep"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivQrSantri"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="8dp"
+            tools:src="@drawable/qr_example"
+            />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnZoom"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="4dp"
+        app:cardCornerRadius="12.5dp"
+        android:backgroundTint="@color/navy_one">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_zoom"
+            android:padding="4dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

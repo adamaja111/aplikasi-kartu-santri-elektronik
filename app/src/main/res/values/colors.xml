@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="cream">#f3f7e8</color>
+    <color name="cream_green">#d9e1c8</color>
+    <color name="cream_green_deep">#bfcaa8</color>
+
+    <color name="brown_green">#9ba78f</color>
+    <color name="brown_green_medium">#707c68</color>
+    <color name="brown_green_deep">#474f44</color>
+
+    <color name="green_one">#8ed2ae</color>
+    <color name="green_one_medium">#74af93</color>
+    <color name="green_one_deep">#5c8972</color>
+    <color name="main_green">#1D7658</color>
+    <color name="main_green_deep">#155944</color>
+
+    <color name="green_two">#a6ccbd</color>
+    <color name="green_two_medium">#7ea296</color>
+    <color name="green_two_deep">#56776c</color>
+
+    <color name="green">#6d9773</color>
+    <color name="emerald_green">#286a69</color>
+    <color name="navy_one">#0c3b2e</color>
+    <color name="navy_two">#213059</color>
+    <color name="yellow_one">#ffba00</color>
+    <color name="yellow_two">#f4ad41</color>
+    <color name="brown_one">#b46617</color>
+    <color name="cream_two">#eee5d6</color>
+    <color name="red">#ff0005</color>
+
+    <color name="yellow">#fce8b3</color>
+    <color name="yellow_three">#fcf3e1</color>
+    <color name="white_two">#fbf9ed</color>
+
+    <color name="red_two">#f8c7cb</color>
+    <color name="red_three">#fcf3f2</color>
+
+    <color name="green_home">#02e607</color>
+    <color name="green_home_two">#c7f8cb</color>
+    <color name="green_home_three">#f2fcf3</color>
+
+</resources>

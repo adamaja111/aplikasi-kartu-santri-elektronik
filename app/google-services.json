@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "689357073854",
+    "project_id": "scansantri",
+    "storage_bucket": "scansantri.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689357073854:android:17ad41c86dbe27d51d1def",
+        "android_client_info": {
+          "package_name": "com.android.scansantri"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAz1zrXvUuI8l--nuzM32I4cBCQnUAHbrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:background="@drawable/creambox_radius_24"
+    android:paddingTop="12dp"
+    android:paddingBottom="32dp"
+    android:paddingHorizontal="16dp">
+
+    <ImageView
+        android:id="@+id/btnClose"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="end"
+        android:src="@drawable/baseline_close_24"
+        />
+
+    <TextView
+        android:id="@+id/tvNamaSantri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Nama Santri"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/main_green_deep"
+        android:textSize="16sp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:src="@color/green_one_medium"
+        />
+
+    <ImageView
+        android:id="@+id/ivQr"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="16dp"
+        android:maxWidth="250dp"
+        android:layout_marginHorizontal="24dp"
+        tools:src="@drawable/qr_example"
+        />
+
+</LinearLayout>

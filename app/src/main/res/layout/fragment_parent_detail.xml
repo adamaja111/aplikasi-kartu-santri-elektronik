@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_green"
+    android:orientation="vertical"
+    tools:context=".presentation.list.ParentDetailFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="36dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <CheckBox
+                    android:id="@+id/cbxCerai"
+                    android:enabled="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Orang tua sudah bercerai"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/cream_green"
+                    android:textSize="13sp"
+                    android:layout_gravity="center"
+                    android:includeFontPadding="false"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                >
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/img_father"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Data Ayah"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/cream_green"
+                    android:textSize="14sp"
+                    android:textAlignment="textStart"
+                    android:layout_marginStart="8dp"
+                    android:includeFontPadding="false"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvNamaAyah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Nama : Nama Ayah"
+                android:text="Nama : - "
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/cream"
+                android:layout_marginTop="2dp"
+                android:textSize="14sp"
+                android:textAlignment="textStart"
+                android:includeFontPadding="false"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+                >
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/img_job"
+                    />
+                <TextView
+                    android:id="@+id/tvPekerjaanAyah"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    tools:text="Pekerjaan ayah"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/cream"
+                    android:textSize="14sp"
+                    android:text=" - "
+                    android:textAlignment="textStart"
+                    android:layout_marginStart="4dp"
+                    android:includeFontPadding="false"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+                >
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/img_phone"
+                    />
+                <TextView
+                    android:id="@+id/tvTelponAyah"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    tools:text="081234567890"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/cream"
+                    android:text=" - "
+                    android:textSize="14sp"
+                    android:textAlignment="textStart"
+                    android:layout_marginStart="4dp"
+                    android:includeFontPadding="false"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="18dp"
+                >
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/img_mother"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Data Ibu"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/cream_green"
+                    android:textSize="14sp"
+                    android:textAlignment="textStart"
+                    android:layout_marginStart="8dp"
+                    android:includeFontPadding="false"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvNamaIbu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Nama : Nama Ibu"
+                android:text = "Nama : -"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/cream"
+                android:layout_marginTop="2dp"
+                android:textSize="14sp"
+                android:textAlignment="textStart"
+                android:includeFontPadding="false"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+                >
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/img_job"
+                    />
+                <TextView
+                    android:id="@+id/tvPekerjaanIbu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    tools:text="Pekerjaan ibu"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/cream"
+                    android:textSize="14sp"
+                    android:text=" - "
+                    android:textAlignment="textStart"
+                    android:layout_marginStart="4dp"
+                    android:includeFontPadding="false"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+                >
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/img_phone"
+                    />
+                <TextView
+                    android:id="@+id/tvTelponIbu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    tools:text="081234567890"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/cream"
+                    android:textSize="14sp"
+                    android:text=" - "
+                    android:textAlignment="textStart"
+                    android:layout_marginStart="4dp"
+                    android:includeFontPadding="false"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="18dp"
+                >
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/img_father"
+                    />
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/img_mother"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Data Orang Tua Tiri"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/cream_green"
+                    android:textSize="14sp"
+                    android:textAlignment="textStart"
+                    android:layout_marginStart="8dp"
+                    android:includeFontPadding="false"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvNamaTiri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Nama : Nama Ayah"
+                android:text = "Nama : -"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/cream"
+                android:layout_marginTop="2dp"
+                android:textSize="14sp"
+                android:textAlignment="textStart"
+                android:includeFontPadding="false"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+                >
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/img_phone"
+                    />
+                <TextView
+                    android:id="@+id/tvTelponTiri"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    tools:text="081234567890"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/cream"
+                    android:textSize="14sp"
+                    android:text=" - "
+                    android:textAlignment="textStart"
+                    android:layout_marginStart="4dp"
+                    android:includeFontPadding="false"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+                >
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/img_address"
+                    />
+                <TextView
+                    android:id="@+id/tvAlamatTiri"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    tools:text="Alamat orang tua tiri"
+                    android:text=" - "
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/cream"
+                    android:textSize="14sp"
+                    android:textAlignment="textStart"
+                    android:layout_marginStart="4dp"
+                    android:includeFontPadding="false"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

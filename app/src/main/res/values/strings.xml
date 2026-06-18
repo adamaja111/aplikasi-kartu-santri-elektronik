@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Scan Santri</string>
+    <string name="list_santri">List Santri</string>
+    <string name="add_santri">Add Santri</string>
+    <string name="scan_qr">Scan QR</string>
+    <string name="report">Report</string>
+    <string name="nomor_induk_santri_nis">Nomor Induk Santri (NIS) :</string>
+    <string name="masukkan_nis">Masukkan NIS</string>
+    <string name="nama_lengkap">Nama Lengkap :</string>
+    <string name="masukkan_nama">Masukkan Nama</string>
+    <string name="tempat_lahir">Tempat Lahir :</string>
+    <string name="masukkan_tempat_lahir">Masukkan Tempat Lahir</string>
+    <string name="tanggal_lahir">Tanggal Lahir :</string>
+    <string name="masukkan_tanggal_lahir">Masukkan Tanggal Lahir</string>
+    <string name="jenis_kelamin">Jenis Kelamin :</string>
+    <string name="alamat_lengkap">Alamat Lengkap :</string>
+    <string name="masukkan_alamat_lengkap">Masukkan Alamat Lengkap</string>
+    <string name="nomor_telepon_hp">Nomor Telepon/HP :</string>
+    <string name="masukkan_nomor_telepon_hp">Masukkan Nomor Telepon/HP</string>
+    <string name="email">Email :</string>
+    <string name="masukkan_email">Masukkan Email</string>
+    <string name="field_cant_be_empty_error">Field tidak boleh kosong</string>
+    <string name="email_must_valid">Email tidak valid</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="generating">Generating</string>
+    <string name="generating_pdf">Sedang generate pdf, mohon tunggu sebentar...</string>
+
+
+    <string-array name="peringkat_spinner_array">
+        <item>Peringkat 1</item>
+        <item>Peringkat 2</item>
+        <item>Peringkat 3</item>
+        <item>Harapan 1</item>
+        <item>Harapan 2</item>
+        <item>Harapan 3</item>
+        <item>Peserta</item>
+    </string-array>
+
+    <string-array name="tingkat_spinner_array">
+        <item>Internasional</item>
+        <item>Nasional</item>
+        <item>Provinsi</item>
+        <item>Kabupaten</item>
+        <item>Antar Sekolah</item>
+    </string-array>
+
+</resources>

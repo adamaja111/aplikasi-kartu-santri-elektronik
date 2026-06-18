@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/green_one_deep"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.add.AddSantriActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintDimensionRatio="1"
+            android:src="@color/main_green"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            android:scaleType="centerCrop"
+            />
+
+            <TextView
+                android:id="@+id/headerAddSantri"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Add Santri"
+                android:layout_marginTop="24dp"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="22sp"
+                android:includeFontPadding="false"
+                android:textColor="@color/cream_green"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/creambox_radius_24"
+                android:paddingBottom="86dp"
+                android:paddingHorizontal="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/headerAddSantri"
+                app:layout_constraintEnd_toEndOf="parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="32dp"
+                    >
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/img_form_santri"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Data Pribadi Santri"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/navy_one"
+                        android:textSize="15sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_gravity="center"
+                        android:includeFontPadding="false"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nomor_induk_santri_nis"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/navy_one"
+                    android:textSize="15sp"
+                    android:includeFontPadding="false"
+                    android:layout_marginTop="16dp"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etNis"
+                    android:hint=" "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_box"
+                        android:fontFamily="@font/poppins"
+                        android:hint="@string/masukkan_nis"
+                        android:padding="12dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/brown_green_medium"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nama_lengkap"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/navy_one"
+                    android:textSize="15sp"
+                    android:includeFontPadding="false"
+                    android:layout_marginTop="12dp"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etNama"
+                    android:hint=" "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_box"
+                        android:fontFamily="@font/poppins"
+                        android:hint="@string/masukkan_nama"
+                        android:padding="12dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/brown_green_medium"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tempat_lahir"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/navy_one"
+                    android:textSize="15sp"
+                    android:includeFontPadding="false"
+                    android:layout_marginTop="12dp"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etTempatLahir"
+                    android:hint=" "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_box"
+                        android:fontFamily="@font/poppins"
+                        android:hint="@string/masukkan_tempat_lahir"
+                        android:padding="12dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/brown_green_medium"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tanggal_lahir"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/navy_one"
+                    android:textSize="15sp"
+                    android:includeFontPadding="false"
+                    android:layout_marginTop="12dp"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etTanggalLahir"
+                    android:hint=" "
+                    android:editable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_box"
+                        android:fontFamily="@font/poppins"
+                        android:hint="@string/masukkan_tanggal_lahir"
+                        android:padding="12dp"
+                        android:editable="false"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/brown_green_medium"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jenis_kelamin"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/navy_one"
+                    android:textSize="15sp"
+                    android:includeFontPadding="false"
+                    android:layout_marginTop="12dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioJenisKelamin"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <RadioButton android:id="@+id/radioJKLaki"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:text="Laki-laki"/>
+
+                        <RadioButton android:id="@+id/radioJKPerempuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:text="Perempuan"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alamat_lengkap"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/navy_one"
+                    android:textSize="15sp"
+                    android:includeFontPadding="false"
+                    android:layout_marginTop="12dp"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etAlamatLengkap"
+                    android:hint=" "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+                        android:background="@drawable/edit_text_box"
+                        android:fontFamily="@font/poppins"
+                        android:hint="@string/masukkan_alamat_lengkap"
+                        android:gravity="start"
+                        android:padding="12dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/brown_green_medium"
+                        android:inputType="textMultiLine" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nomor_telepon_hp"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/navy_one"
+                    android:textSize="15sp"
+                    android:includeFontPadding="false"
+                    android:layout_marginTop="12dp"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etNomorTelpon"
+                    android:hint=" "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_box"
+                        android:fontFamily="@font/poppins"
+                        android:hint="@string/masukkan_nomor_telepon_hp"
+                        android:padding="12dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/brown_green_medium"
+                        android:inputType="phone" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/navy_one"
+                    android:textSize="15sp"
+                    android:includeFontPadding="false"
+                    android:layout_marginTop="12dp"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etEmail"
+                    android:hint=" "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_box"
+                        android:fontFamily="@font/poppins"
+                        android:hint="@string/masukkan_email"
+                        android:padding="12dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/brown_green_medium"
+                        android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    >
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/img_social_santri"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Akun Media Sosial"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/navy_one"
+                        android:textSize="15sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_gravity="center"
+                        android:includeFontPadding="false"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook : "
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/navy_one"
+                    android:textSize="15sp"
+                    android:includeFontPadding="false"
+                    android:layout_marginTop="12dp"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etFacebook"
+                    android:hint=" "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_box"
+                        android:fontFamily="@font/poppins"
+                        android:hint="Username Facebook"
+                        android:padding="12dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/brown_green_medium"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Instagram : "
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/navy_one"
+                    android:textSize="15sp"
+                    android:includeFontPadding="false"
+                    android:layout_marginTop="12dp"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etInstagram"
+                    android:hint=" "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_box"
+                        android:fontFamily="@font/poppins"
+                        android:hint="Username Instagram"
+                        android:padding="12dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/brown_green_medium"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Twitter : "
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/navy_one"
+                    android:textSize="15sp"
+                    android:includeFontPadding="false"
+                    android:layout_marginTop="12dp"
+                    />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etTwitter"
+                    android:hint=" "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_box"
+                        android:fontFamily="@font/poppins"
+                        android:hint="Username Twitter"
+                        android:padding="12dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/brown_green_medium"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    >
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/img_parent_santri"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Data Orang Tua"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/navy_one"
+                        android:textSize="15sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_gravity="center"
+                        android:includeFontPadding="false"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                >
+                <LinearLayout
+                    android:id="@+id/btnBukaFormAyah"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/bg_menu_btn"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:src="@drawable/img_father"
+                        />
+                    <TextView
+                        android:id="@+id/tvBelumInputAyah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Belum ada data ayah"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/cream"
+                        android:textSize="12sp"
+                        android:textAlignment="center"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="8dp"
+                        android:paddingBottom="8dp"
+                        />
+                    <LinearLayout
+                        android:id="@+id/layoutAyah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="8dp"
+                        android:visibility="gone"
+                        >
+                        <TextView
+                            android:id="@+id/tvNamaAyah"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="Nama Ayah"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textColor="@color/cream"
+                            android:textSize="12sp"
+                            android:textAlignment="center"
+                            android:includeFontPadding="false"
+                            android:layout_marginTop="8dp"
+                            />
+                        <TextView
+                            android:id="@+id/tvPekerjaanAyah"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="Manager"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/white"
+                            android:textSize="11sp"
+                            android:textAlignment="center"
+                            android:includeFontPadding="false"
+                            android:layout_marginTop="2dp"
+                            />
+                        <TextView
+                            android:id="@+id/tvTelponAyah"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="081234567890"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/white"
+                            android:textSize="11sp"
+                            android:textAlignment="center"
+                            android:includeFontPadding="false"
+                            android:layout_marginTop="2dp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/btnBukaFormIbu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/bg_menu_btn"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:src="@drawable/img_mother"
+                        />
+                    <TextView
+                        android:id="@+id/tvBelumInputIbu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Belum ada data ibu"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/cream"
+                        android:textSize="12sp"
+                        android:textAlignment="center"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="8dp"
+                        android:paddingBottom="8dp"
+                        />
+                    <LinearLayout
+                        android:id="@+id/layoutIbu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="8dp"
+                        android:visibility="gone"
+                        >
+                        <TextView
+                            android:id="@+id/tvNamaIbu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="Nama Ibu"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textColor="@color/cream"
+                            android:textSize="12sp"
+                            android:textAlignment="center"
+                            android:includeFontPadding="false"
+                            android:layout_marginTop="8dp"
+                            />
+                        <TextView
+                            android:id="@+id/tvPekerjaanIbu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="HRD"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/white"
+                            android:textSize="11sp"
+                            android:textAlignment="center"
+                            android:includeFontPadding="false"
+                            android:layout_marginTop="2dp"
+                            />
+                        <TextView
+                            android:id="@+id/tvTelponIbu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="081234567890"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/white"
+                            android:textSize="11sp"
+                            android:textAlignment="center"
+                            android:includeFontPadding="false"
+                            android:layout_marginTop="2dp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <CheckBox
+                        android:id="@+id/cbxCerai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Orang tua sudah bercerai"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/navy_one"
+                        android:textSize="13sp"
+                        android:layout_gravity="center"
+                        android:includeFontPadding="false"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutOrtuCerai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/bg_menu_btn">
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:src="@drawable/img_father"
+                    />
+                <ImageView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:src="@drawable/img_mother"
+                    />
+                <TextView
+                    android:id="@+id/tvBelumInputTiri"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Belum ada data orang tua tiri"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/cream"
+                    android:textSize="12sp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:includeFontPadding="false"
+                    />
+                <LinearLayout
+                    android:id="@+id/layoutOrtuTiri"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    >
+                    <TextView
+                        android:id="@+id/tvNamaTiri"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Nama Ortu Tiri"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/cream"
+                        android:textSize="12sp"
+                        android:textAlignment="textStart"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="8dp"
+                        />
+                    <TextView
+                        android:id="@+id/tvTelponTiri"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="081234567890"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        android:textAlignment="textStart"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="2dp"
+                        />
+                    <TextView
+                        android:id="@+id/tvAlamatTiri"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Jalan apel jeruk no 123"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        android:textAlignment="textStart"
+                        android:includeFontPadding="false"
+                        android:layout_marginTop="2dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    >
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/img_organization"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Riwayat Organisasi/ Ekstrakurikuler"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/navy_one"
+                        android:textSize="14sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_gravity="center"
+                        android:includeFontPadding="false"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvOrganization"
+                    android:layout_marginTop="8dp"
+                    tools:listitem="@layout/item_layout_organization"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    tools:itemCount="2"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnAddOrganization"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/main_green"
+                    android:background="@drawable/green_border_16"
+                    android:text="+ Tambah Organisasi/ Ekstrakurikuler"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    >
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/img_award"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Prestasi Santri"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/navy_one"
+                        android:textSize="14sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_gravity="center"
+                        android:includeFontPadding="false"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPrestasi"
+                    android:layout_marginTop="8dp"
+                    tools:listitem="@layout/item_layout_award"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="2"
+                    tools:itemCount="3"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnAddPrestasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/main_green"
+                    android:background="@drawable/green_border_16"
+                    android:text="+ Tambah Prestasi"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    >
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/img_health"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Riwayat Kesehatan"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/navy_one"
+                        android:textSize="14sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_gravity="center"
+                        android:includeFontPadding="false"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvKesehatan"
+                    android:layout_marginTop="8dp"
+                    tools:listitem="@layout/item_layout_health"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    tools:itemCount="1"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnAddHealth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/main_green"
+                    android:background="@drawable/green_border_16"
+                    android:text="+ Tambah Riwayat Kesehatan"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    >
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/img_pelanggaran"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Riwayat Pelanggaran"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/navy_one"
+                        android:textSize="14sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_gravity="center"
+                        android:includeFontPadding="false"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPelanggaran"
+                    android:layout_marginTop="8dp"
+                    tools:listitem="@layout/item_layout_pelanggaran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    tools:itemCount="1"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnAddPelanggaran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/main_green"
+                    android:background="@drawable/green_border_16"
+                    android:text="+ Tambah Riwayat Pelanggaran"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnTambahSantri"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="36dp"
+                    android:text="Tambah Santri"
+                    android:background="@drawable/yellowbox_container_12"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
